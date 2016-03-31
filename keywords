@@ -1,0 +1,22 @@
+########################################################################
+# Syntax Coloring Map For RealTimeClock
+########################################################################
+
+########################################################################
+# Datatypes (KEYWORD1)
+########################################################################
+
+RealTimeClock	KEYWORD1
+RealTimeClockDS1307	KEYWORD1
+
+########################################################################
+# Methods and Functions (KEYWORD2)
+########################################################################
+
+getSeconds    KEYWORD2
+getMinutes    KEYWORD2
+getHour    KEYWORD2
+getDay    KEYWORD2
+getDate    KEYWORD2
+getMonth    KEYWORD2
+getYear    KEYWORD2

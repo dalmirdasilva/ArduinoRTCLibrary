@@ -1,2 +1,3 @@
-# ArduinoRealTimeClock
-RTC library for Arduino. 
+# Arduino Real Time Clock Library
+
+[Documentation.pdf](Documentation.pdf)
