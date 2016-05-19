@@ -28,13 +28,15 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
  11 .text._ZN19RealTimeClockDS13077getYearEv 0000000c  00000000  00000000  0000008c  2**0
                   CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
- 12 .text._ZN19RealTimeClockDS1307C2Ev 00000026  00000000  00000000  00000098  2**0
+ 12 .text._ZN19RealTimeClockDS13074isPMEv 0000000c  00000000  00000000  00000098  2**0
                   CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
- 13 .rodata._ZTV13RealTimeClock 00000012  00000000  00000000  000000be  2**0
+ 13 .text._ZN19RealTimeClockDS1307C2Ev 00000026  00000000  00000000  000000a4  2**0
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+ 14 .rodata._ZTV13RealTimeClock 00000014  00000000  00000000  000000ca  2**0
                   CONTENTS, ALLOC, LOAD, RELOC, READONLY, DATA
- 14 .rodata._ZTV19RealTimeClockDS1307 00000012  00000000  00000000  000000d0  2**0
+ 15 .rodata._ZTV19RealTimeClockDS1307 00000014  00000000  00000000  000000de  2**0
                   CONTENTS, ALLOC, LOAD, RELOC, READONLY, DATA
- 15 .comment      00000012  00000000  00000000  000000e2  2**0
+ 16 .comment      00000012  00000000  00000000  000000f2  2**0
                   CONTENTS, READONLY
 
 Disassembly of section .text._ZN19RealTimeClockDS130710getSecondsEv:
@@ -48,79 +50,88 @@ Disassembly of section .text._ZN19RealTimeClockDS130710getSecondsEv:
 
 Disassembly of section .text._ZN19RealTimeClockDS130710getMinutesEv:
 
-0000000c <_ZN19RealTimeClockDS130710getMinutesEv>:
-   c:	61 e0       	ldi	r22, 0x01	; 1
-   e:	02 96       	adiw	r24, 0x02	; 2
-  10:	0e 94 00 00 	call	0	; 0x0 <__tmp_reg__>
-  14:	80 e0       	ldi	r24, 0x00	; 0
-  16:	08 95       	ret
+00000000 <_ZN19RealTimeClockDS130710getMinutesEv>:
+   0:	61 e0       	ldi	r22, 0x01	; 1
+   2:	02 96       	adiw	r24, 0x02	; 2
+   4:	0e 94 00 00 	call	0	; 0x0 <_ZN19RealTimeClockDS130710getMinutesEv>
+   8:	80 e0       	ldi	r24, 0x00	; 0
+   a:	08 95       	ret
 
 Disassembly of section .text._ZN19RealTimeClockDS13077getHourEv:
 
-00000024 <_ZN19RealTimeClockDS13077getHourEv>:
-  24:	62 e0       	ldi	r22, 0x02	; 2
-  26:	02 96       	adiw	r24, 0x02	; 2
-  28:	0e 94 00 00 	call	0	; 0x0 <__tmp_reg__>
-  2c:	80 e0       	ldi	r24, 0x00	; 0
-  2e:	08 95       	ret
+00000000 <_ZN19RealTimeClockDS13077getHourEv>:
+   0:	62 e0       	ldi	r22, 0x02	; 2
+   2:	02 96       	adiw	r24, 0x02	; 2
+   4:	0e 94 00 00 	call	0	; 0x0 <_ZN19RealTimeClockDS13077getHourEv>
+   8:	80 e0       	ldi	r24, 0x00	; 0
+   a:	08 95       	ret
 
 Disassembly of section .text._ZN19RealTimeClockDS13076getDayEv:
 
-00000054 <_ZN19RealTimeClockDS13076getDayEv>:
-  54:	64 e0       	ldi	r22, 0x04	; 4
-  56:	02 96       	adiw	r24, 0x02	; 2
-  58:	0e 94 00 00 	call	0	; 0x0 <__tmp_reg__>
-  5c:	80 e0       	ldi	r24, 0x00	; 0
-  5e:	08 95       	ret
+00000000 <_ZN19RealTimeClockDS13076getDayEv>:
+   0:	64 e0       	ldi	r22, 0x04	; 4
+   2:	02 96       	adiw	r24, 0x02	; 2
+   4:	0e 94 00 00 	call	0	; 0x0 <_ZN19RealTimeClockDS13076getDayEv>
+   8:	80 e0       	ldi	r24, 0x00	; 0
+   a:	08 95       	ret
 
 Disassembly of section .text._ZN19RealTimeClockDS13077getDateEv:
 
-000000b4 <_ZN19RealTimeClockDS13077getDateEv>:
-  b4:	64 e0       	ldi	r22, 0x04	; 4
-  b6:	02 96       	adiw	r24, 0x02	; 2
-  b8:	0e 94 00 00 	call	0	; 0x0 <__tmp_reg__>
-  bc:	80 e0       	ldi	r24, 0x00	; 0
-  be:	08 95       	ret
+00000000 <_ZN19RealTimeClockDS13077getDateEv>:
+   0:	64 e0       	ldi	r22, 0x04	; 4
+   2:	02 96       	adiw	r24, 0x02	; 2
+   4:	0e 94 00 00 	call	0	; 0x0 <_ZN19RealTimeClockDS13077getDateEv>
+   8:	80 e0       	ldi	r24, 0x00	; 0
+   a:	08 95       	ret
 
 Disassembly of section .text._ZN19RealTimeClockDS13078getMonthEv:
 
-00000174 <_ZN19RealTimeClockDS13078getMonthEv>:
- 174:	65 e0       	ldi	r22, 0x05	; 5
- 176:	02 96       	adiw	r24, 0x02	; 2
- 178:	0e 94 00 00 	call	0	; 0x0 <__tmp_reg__>
- 17c:	80 e0       	ldi	r24, 0x00	; 0
- 17e:	08 95       	ret
+00000000 <_ZN19RealTimeClockDS13078getMonthEv>:
+   0:	65 e0       	ldi	r22, 0x05	; 5
+   2:	02 96       	adiw	r24, 0x02	; 2
+   4:	0e 94 00 00 	call	0	; 0x0 <_ZN19RealTimeClockDS13078getMonthEv>
+   8:	80 e0       	ldi	r24, 0x00	; 0
+   a:	08 95       	ret
 
 Disassembly of section .text._ZN19RealTimeClockDS13077getYearEv:
 
-000002f4 <_ZN19RealTimeClockDS13077getYearEv>:
- 2f4:	66 e0       	ldi	r22, 0x06	; 6
- 2f6:	02 96       	adiw	r24, 0x02	; 2
- 2f8:	0e 94 00 00 	call	0	; 0x0 <__tmp_reg__>
- 2fc:	80 e0       	ldi	r24, 0x00	; 0
- 2fe:	08 95       	ret
+00000000 <_ZN19RealTimeClockDS13077getYearEv>:
+   0:	66 e0       	ldi	r22, 0x06	; 6
+   2:	02 96       	adiw	r24, 0x02	; 2
+   4:	0e 94 00 00 	call	0	; 0x0 <_ZN19RealTimeClockDS13077getYearEv>
+   8:	80 e0       	ldi	r24, 0x00	; 0
+   a:	08 95       	ret
+
+Disassembly of section .text._ZN19RealTimeClockDS13074isPMEv:
+
+00000000 <_ZN19RealTimeClockDS13074isPMEv>:
+   0:	62 e0       	ldi	r22, 0x02	; 2
+   2:	02 96       	adiw	r24, 0x02	; 2
+   4:	0e 94 00 00 	call	0	; 0x0 <_ZN19RealTimeClockDS13074isPMEv>
+   8:	80 e0       	ldi	r24, 0x00	; 0
+   a:	08 95       	ret
 
 Disassembly of section .text._ZN19RealTimeClockDS1307C2Ev:
 
-000005f4 <_ZN19RealTimeClockDS1307C1Ev>:
- 5f4:	cf 93       	push	r28
- 5f6:	df 93       	push	r29
- 5f8:	ec 01       	movw	r28, r24
- 5fa:	fc 01       	movw	r30, r24
- 5fc:	80 e0       	ldi	r24, 0x00	; 0
- 5fe:	90 e0       	ldi	r25, 0x00	; 0
- 600:	81 93       	st	Z+, r24
- 602:	91 93       	st	Z+, r25
- 604:	68 e6       	ldi	r22, 0x68	; 104
- 606:	cf 01       	movw	r24, r30
- 608:	0e 94 00 00 	call	0	; 0x0 <__tmp_reg__>
- 60c:	80 e0       	ldi	r24, 0x00	; 0
- 60e:	90 e0       	ldi	r25, 0x00	; 0
- 610:	99 83       	std	Y+1, r25	; 0x01
- 612:	88 83       	st	Y, r24
- 614:	df 91       	pop	r29
- 616:	cf 91       	pop	r28
- 618:	08 95       	ret
+00000000 <_ZN19RealTimeClockDS1307C1Ev>:
+   0:	cf 93       	push	r28
+   2:	df 93       	push	r29
+   4:	ec 01       	movw	r28, r24
+   6:	fc 01       	movw	r30, r24
+   8:	80 e0       	ldi	r24, 0x00	; 0
+   a:	90 e0       	ldi	r25, 0x00	; 0
+   c:	81 93       	st	Z+, r24
+   e:	91 93       	st	Z+, r25
+  10:	68 e6       	ldi	r22, 0x68	; 104
+  12:	cf 01       	movw	r24, r30
+  14:	0e 94 00 00 	call	0	; 0x0 <_ZN19RealTimeClockDS1307C1Ev>
+  18:	80 e0       	ldi	r24, 0x00	; 0
+  1a:	90 e0       	ldi	r25, 0x00	; 0
+  1c:	99 83       	std	Y+1, r25	; 0x01
+  1e:	88 83       	st	Y, r24
+  20:	df 91       	pop	r29
+  22:	cf 91       	pop	r28
+  24:	08 95       	ret
 
 RealTimeClock.o:     file format elf32-avr
 

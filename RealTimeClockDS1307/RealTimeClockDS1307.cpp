@@ -49,3 +49,9 @@ unsigned char RealTimeClockDS1307::getYear() {
     bits.value = readRegister(YEAR_REGISTER);
     return 10 * bits.TEN_YEAR + bits.YEAR;
 }
+
+bool RealTimeClockDS1307::isPM() {
+    HourBits bits = {0};
+    bits.value = readRegister(HOURS_REGISTER);
+    return bits.PM_AM;
+}

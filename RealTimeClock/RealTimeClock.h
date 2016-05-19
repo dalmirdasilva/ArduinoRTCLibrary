@@ -47,6 +47,11 @@ public:
      * Return the current year.
      */
     virtual unsigned char getYear() = 0;
+
+    /**
+     * PM/AP
+     */
+    virtual bool isPM() = 0;
 };
 
 #endif /* __ARDUINO_REAL_TIME_CLOCK_H__ */

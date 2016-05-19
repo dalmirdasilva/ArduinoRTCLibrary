@@ -12,7 +12,7 @@
 #include <RealTimeClock.h>
 #include <RegisterBasedWiredDevice.h>
 
-#define DS1307_ADDRESS  0xd0
+#define DS1307_ADDRESS      0x68
 
 /**
  * <pre>
@@ -39,6 +39,7 @@
  * +---------+------+------+------+------+------+------+------+------+----------+-------+
  * | 08h–3Fh |                                                       | RAM 56x8 | 00–FF |
  * +---------+------------------------------------------------------------------+-------+
+ * </pre>
  */
 class RealTimeClockDS1307: public RealTimeClock, public RegisterBasedWiredDevice {
 
@@ -220,6 +221,11 @@ public:
      * Return the current year.
      */
     unsigned char getYear();
+
+    /**
+     * PM/AP
+     */
+    bool isPM();
 };
 
 #endif /* __ARDUINO_REAL_TIME_CLOCK_DS1307_H__ */
