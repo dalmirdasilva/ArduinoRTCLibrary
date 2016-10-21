@@ -13,6 +13,8 @@ class RealTimeClock {
 
 public:
 
+    virtual ~RealTimeClock();
+
     /**
      * Return the current seconds.
      */
